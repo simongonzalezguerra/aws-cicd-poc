@@ -3,9 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-       - cd basicspringbootwebapplication && mvn package
+       - cd basicspringbootwebapplication/basicspringbootwebapplication && mvn test && mvn package
 artifacts:
-  base-directory: 'basicspringbootwebapplication,basicspringbootwebapplication/cicd/aws/ec2'
   files:
-    - target/basicspringbootwebapplication-0.0.1-SNAPSHOT.jar
-    - appspec.yml
+    - basicspringbootwebapplication/basicspringbootwebapplication/target/basicspringbootwebapplication-0.0.1-SNAPSHOT.jar
