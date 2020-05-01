@@ -5,9 +5,8 @@ phases:
     commands:
        - cd basicspringbootwebapplication && mvn package
 artifacts:
-  base-directory: basicspringbootwebapplication, basicspringbootwebapplication/cicd/aws/ec2
   files:
-    - target/basicspringbootwebapplication-0.0.1-SNAPSHOT.jar
-    - scripts/start_server.sh
-    - scripts/stop_server.sh
-    - appspec.yml
+    - basicspringbootwebapplication/target/basicspringbootwebapplication-0.0.1-SNAPSHOT.jar
+    - basicspringbootwebapplication/cicd/aws/ec2/scripts/start_server.sh
+    - basicspringbootwebapplication/cicd/aws/ec2/scripts/stop_server.sh
+    - basicspringbootwebapplication/cicd/aws/ec2/appspec.yml
