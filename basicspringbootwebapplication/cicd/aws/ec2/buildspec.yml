@@ -10,3 +10,4 @@ artifacts:
     - basicspringbootwebapplication/cicd/aws/ec2/scripts/start_server.sh
     - basicspringbootwebapplication/cicd/aws/ec2/scripts/stop_server.sh
     - basicspringbootwebapplication/cicd/aws/ec2/appspec.yml
+  discard-paths: yes
