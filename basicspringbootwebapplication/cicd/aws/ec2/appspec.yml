@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: basicspringbootwebapplication-0.0.1-SNAPSHOT.jar
-    destination: /basicspringbootwebapplication/basicspringbootwebapplication-0.0.1-SNAPSHOT.jar
+    destination: /basicspringbootwebapplication/
 hooks:
   ApplicationStart:
     - location: start_server.sh
