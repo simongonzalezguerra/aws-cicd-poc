@@ -20,7 +20,7 @@ class HelloWorld {
 
     @RequestMapping("/")
     public String sayHi() {
-    	return "Hello World!";
+        return "Hello World!";
     }
 }
 
@@ -29,13 +29,11 @@ class HelloWorld {
 // package than the class we are referencing it from, which is not the case.
 @SpringBootApplication(scanBasePackageClasses = HelloWorld.class)
 public class App {
-	private static Logger logger = LoggerFactory.getLogger(App.class);
+    private static Logger logger = LoggerFactory.getLogger(App.class);
 
-	public static void main(String[] args)  throws Exception {
-	    ConfigurableApplicationContext ctx = SpringApplication.run(App.class, args);
-	    assert (ctx != null);
-	    logger.info("Application started...");
-	    System.in.read();
-	    ctx.close();
-	}
+    public static void main(String[] args)  throws Exception {
+        ConfigurableApplicationContext ctx = SpringApplication.run(App.class, args);
+        assert (ctx != null);
+        logger.info("Application started...");
+    }
 }
